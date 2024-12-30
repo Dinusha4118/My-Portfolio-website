@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinusha Deshan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="darkbtn">Dark Mode</button>
+      </nav>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>I'm Dinusha Deshan Wijewardana</h1>
+          <p>An Aspiring IT Professional & Creative Problem Solver</p>
+          <a href="CV Dinusha Deshan.pdf" class="btn primary">Download Resume</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+          <img src="pic1.png" alt="Your Picture">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>🧑‍💻As an ambitious undergraduate pursuing a Bachelor’s degree in Information Technology at SLIIT, I am passionate about leveraging technology to solve real-world problems. My academic journey has equipped me with a strong foundation in programming, data analysis, and software development, and I am eager to apply these skills in a professional setting.
+
+        Currently, I am seeking an internship opportunity where I can gain hands-on experience, contribute to innovative projects, and further enhance my technical and problem-solving abilities. I am particularly interested in areas such as software development, data science, and IT infrastructure.
+        
+        My dedication to continuous learning and my ability to adapt to new challenges have always been my strengths. I thrive in collaborative environments where I can exchange ideas, learn from experienced professionals, and contribute to team success.
+        
+        If you're looking for a motivated, hardworking, and enthusiastic individual ready to learn and grow, I would be excited to connect with you. Let’s create value together through technology!☺️.</p>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">HTML/CSS</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">Git/GitHub</div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in">
+          <img src="inventory.png" alt="Project 1">
+          <h3>Kade_Management-System</h3>
+          <p>☺️The Kade Management System is a simple and affordable inventory management solution designed for small and medium-sized retail shops (kades). This system helps shop owners track sales, monitor stock levels, manage suppliers, and receive low-stock alerts.
+
+            Key Features:
+            Add and manage products with ease.
+            Track daily sales and generate reports.
+            Get alerts for low stock and create reorder lists.
+            Manage supplier details and reorder directly.
+            Generate sales and inventory reports to understand shop performance.
+            Empower your business with a digital solution that saves time and boosts efficiency. Perfect for Sri Lanka's small-scale businesses!😎
+            </p>
+          <a href="https://github.com/Dinusha4118/Kade_Management-System.git" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <img src="kindbite.jpg" alt="Project 2">
+          <h3>KindBite-System</h3>
+          <p>The web app, KindBite, is a platform designed to reduce food waste and combat food insecurity. It connects restaurants or food donors (such as supermarkets, event organizers) with volunteers and communities in need. The app allows donors to list surplus food, volunteers to facilitate logistics, and recipients to access the donated food.</p>
+          <a href="https://github.com/Dinusha4118/KindBite-System.git" target="_blank">GitHub Repo</a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in">
+            <img src="cal.png" alt="Project 2">
+            <h3>Simple_Calculator</h3>
+            <p>This is a straightforward calculator app built using Kotlin in Android Studio. It provides basic arithmetic functions, including addition, subtraction, multiplication, and division. The app features a user-friendly interface with large, easy-to-read buttons, making it perfect for everyday use.
+
+                Key Features:
+                
+                Basic Operations: Supports addition, subtraction, multiplication, and division.
+                Responsive UI: A clean and intuitive layout that adapts to different screen sizes</p>
+            <a href="https://github.com/Dinusha4118/Simple_Calculator.git" target="_blank">GitHub Repo</a>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>© 2024 Dinusha Deshan. Built with passion and code.</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/dinusha-deshan-596b45318/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/Dinusha4118" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+  
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "zMLB0Ih-dBUpa4F86",
+      });
+   })();
+</script>
+
+
+</body>
+</html>
