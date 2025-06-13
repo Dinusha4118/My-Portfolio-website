@@ -3,137 +3,429 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dinusha Deshan</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Dinusha Deshan | IT Professional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="darkModeToggle" class="darkbtn">Dark Mode</button>
-      </nav>
-      <div class="hero">
-        <div class="hero-content">
-          <h1>I'm Dinusha Deshan Wijewardana</h1>
-          <p>An Aspiring IT Professional & Creative Problem Solver</p>
-          <a href="CV Dinusha Deshan.pdf" class="btn primary">Download Resume</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+      <a href="#" class="logo">Dinusha<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="darkModeToggle" class="dark-mode-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-right">
+        <h1 class="animate__animated animate__fadeInDown">Dinusha Deshan Wijewardana</h1>
+        <h2 class="typing-text">I'm an <span id="typed"></span></h2>
+        <p>Passionate about creating innovative solutions through technology and design.</p>
+        <div class="hero-buttons">
+          <a href="CV Deshan.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
         </div>
-        <div class="hero-image" data-aos="fade-left">
-          <img src="pic1.png" alt="Your Picture">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/dinusha-deshan-596b45318/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Dinusha4118" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <div class="image-wrapper">
+          <img src="pic2.png" alt="Dinusha Deshan">
+          <div class="circle"></div>
+          <div class="dots"></div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>🧑‍💻As an ambitious undergraduate pursuing a Bachelor’s degree in Information Technology at SLIIT, I am passionate about leveraging technology to solve real-world problems. My academic journey has equipped me with a strong foundation in programming, data analysis, and software development, and I am eager to apply these skills in a professional setting.
-
-        Currently, I am seeking an internship opportunity where I can gain hands-on experience, contribute to innovative projects, and further enhance my technical and problem-solving abilities. I am particularly interested in areas such as software development, data science, and IT infrastructure.
-        
-        My dedication to continuous learning and my ability to adapt to new challenges have always been my strengths. I thrive in collaborative environments where I can exchange ideas, learn from experienced professionals, and contribute to team success.
-        
-        If you're looking for a motivated, hardworking, and enthusiastic individual ready to learn and grow, I would be excited to connect with you. Let’s create value together through technology!☺️.</p>
-    </section>
-
-    <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">Python</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">HTML/CSS</div>
-        <div class="skill-card">React.js</div>
-        <div class="skill-card">Node.js</div>
-        <div class="skill-card">Git/GitHub</div>
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Get to know me better</p>
       </div>
-    </section>
-
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card" data-aos="zoom-in">
-          <img src="inventory.png" alt="Project 1">
-          <h3>Kade_Management-System</h3>
-          <p>☺️The Kade Management System is a simple and affordable inventory management solution designed for small and medium-sized retail shops (kades). This system helps shop owners track sales, monitor stock levels, manage suppliers, and receive low-stock alerts.
-
-            Key Features:
-            Add and manage products with ease.
-            Track daily sales and generate reports.
-            Get alerts for low stock and create reorder lists.
-            Manage supplier details and reorder directly.
-            Generate sales and inventory reports to understand shop performance.
-            Empower your business with a digital solution that saves time and boosts efficiency. Perfect for Sri Lanka's small-scale businesses!😎
-            </p>
-          <a href="https://github.com/Dinusha4118/Kade_Management-System.git" target="_blank">GitHub Repo</a>
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right">
+          <img src="pic2.png" alt="About Dinusha">
         </div>
-        <div class="project-card" data-aos="zoom-in">
-          <img src="kindbite.jpg" alt="Project 2">
-          <h3>KindBite-System</h3>
-          <p>The web app, KindBite, is a platform designed to reduce food waste and combat food insecurity. It connects restaurants or food donors (such as supermarkets, event organizers) with volunteers and communities in need. The app allows donors to list surplus food, volunteers to facilitate logistics, and recipients to access the donated food.</p>
-          <a href="https://github.com/Dinusha4118/KindBite-System.git" target="_blank">GitHub Repo</a>
-        </div>
-
-        <div class="project-card" data-aos="zoom-in">
-            <img src="cal.png" alt="Project 2">
-            <h3>Simple_Calculator</h3>
-            <p>This is a straightforward calculator app built using Kotlin in Android Studio. It provides basic arithmetic functions, including addition, subtraction, multiplication, and division. The app features a user-friendly interface with large, easy-to-read buttons, making it perfect for everyday use.
-
-                Key Features:
-                
-                Basic Operations: Supports addition, subtraction, multiplication, and division.
-                Responsive UI: A clean and intuitive layout that adapts to different screen sizes</p>
-            <a href="https://github.com/Dinusha4118/Simple_Calculator.git" target="_blank">GitHub Repo</a>
+        <div class="about-text" data-aos="fade-left">
+          <h3>Who am I?</h3>
+          <p>I'm an ambitious undergraduate pursuing a Bachelor's degree in Information Technology at SLIIT, passionate about leveraging technology to solve real-world problems.</p>
+          
+          <div class="info-grid">
+            <div class="info-item">
+              <span><i class="fas fa-user-graduate"></i> Degree:</span>
+              <p>BSc in Information Technology</p>
+            </div>
+            <div class="info-item">
+              <span><i class="fas fa-university"></i> University:</span>
+              <p>SLIIT</p>
+            </div>
+            <div class="info-item">
+              <span><i class="fas fa-envelope"></i> Email:</span>
+              <p>dinushadeshan4@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <span><i class="fas fa-map-marker-alt"></i> Location:</span>
+              <p>Sri Lanka</p>
+            </div>
           </div>
+          
+          <p>My academic journey has equipped me with a strong foundation in programming, data analysis, and software development. I thrive in collaborative environments where I can exchange ideas and contribute to team success.</p>
+          
+          <div class="stats">
+            <div class="stat-item" data-aos="zoom-in">
+              <h4>5+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+              <h4>3</h4>
+              <p>Programming Languages</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+              <h4>100%</h4>
+              <p>Passionate</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>My Skills</h2>
+        <p>Technologies I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>Advanced programming skills with experience in Django, Flask, and data analysis.</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Experience with modern ES6+ JavaScript, React, and Node.js development.</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML/CSS</h3>
+          <p>Strong foundation in responsive web design and modern CSS techniques.</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3>React.js</h3>
+          <p>Building interactive user interfaces with React and related ecosystem.</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-icon">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <h3>Node.js</h3>
+          <p>Developing server-side applications and APIs with Express.js.</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 65%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="skill-icon">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3>Git/GitHub</h3>
+          <p>Version control and collaborative development workflows.</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <div class="footer-container">
-      <p>© 2024 Dinusha Deshan. Built with passion and code.</p>
-      <ul class="social-links">
-        <li><a href="https://www.linkedin.com/in/dinusha-deshan-596b45318/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/Dinusha4118" target="_blank">GitHub</a></li>
-      </ul>
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>My Projects</h2>
+        <p>Some of my recent work</p>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="inventory.png" alt="Kade Management System">
+            <div class="project-links">
+              <a href="https://github.com/Dinusha4118/Kade_Management-System.git" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Kade Management System</h3>
+            <p>An inventory management solution for small retail shops with sales tracking and stock alerts.</p>
+            <div class="project-tech">
+              <span>JavaScrip</span>
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="kindbite.jpg" alt="KindBite System">
+            <div class="project-links">
+              <a href="https://github.com/Dinusha4118/KindBite-System.git" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>KindBite System</h3>
+            <p>Platform to reduce food waste by connecting donors with communities in need.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <img src="cal.png" alt="Simple Calculator">
+            <div class="project-links">
+              <a href="https://github.com/Dinusha4118/Simple_Calculator.git" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Simple Calculator</h3>
+            <p>Android calculator app built with Kotlin featuring basic arithmetic operations.</p>
+            <div class="project-tech">
+              <span>Kotlin</span>
+              <span>Android</span>
+              <span>Java</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <img src="AcadamiPlan.png" alt="AcadamiPlan System">
+            <div class="project-links">
+              <a href="https://github.com/Dinusha4118/AcadamiPlan.git" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>AcadamiPlan System</h3>
+            <p>Comprehensive academic scheduler for course enrollment and timetable management.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>MongoDB</span>
+              <span>Express</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="more-projects" data-aos="fade-up">
+        <a href="https://github.com/Dinusha4118" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> View All Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Get In Touch</h2>
+        <p>Let's work together</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email</h3>
+              <p>dinushadeshan4@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Location</h3>
+              <p>Sri Lanka</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Phone</h3>
+              <p>+94 76 561 6887</p>
+            </div>
+          </div>
+          
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/dinusha-deshan-596b45318/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Dinusha4118" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <form id="contactForm" class="contact-form" data-aos="fade-left">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#" class="logo">Dinusha<span>.</span></a>
+          <p>Creating innovative solutions through technology and design.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Technologies</h3>
+          <ul>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Node.js</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get updates on my latest projects.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dinusha Deshan. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/dinusha-deshan-596b45318/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Dinusha4118" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="script.js"></script>
-  
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS
+    (function(){
       emailjs.init({
         publicKey: "zMLB0Ih-dBUpa4F86",
       });
-   })();
-</script>
-
-
+    })();
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
